@@ -1,3 +1,25 @@
-// Example for the use of pre_default
+// colors
 
-$enable-rounded: true;
+// $blue:    #007bff !default;
+// $indigo:  #6610f2 !default;
+// $purple:  #6f42c1 !default;
+// $pink:    #e83e8c !default;
+// $red:     #dc3545 !default;
+// $orange:  #fd7e14 !default;
+$yellow:  #F3D40A;
+// $green:   #28a745 !default;
+// $teal:    #20c997 !default;
+// $cyan:    #17a2b8 !default;
+
+$grey-custom: #D5D5D5;
+$black-custom: #242327;
+
+$primary: $grey-custom;
+$secondary: $yellow;
+$dark: $black-custom;
+
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;

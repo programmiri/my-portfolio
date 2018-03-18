@@ -5,15 +5,103 @@ html
     meta(name="viewport" content="width=device-width")
     title Brunch
     link(rel="stylesheet" href="/app.css")
+    script(defer="" src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous")
     script(src="/vendor.js")
     script(src="/app.js")
     script.
       require('index');
   body
-    .brunch
-      a(href="http://brunch.io")
-        img(src="http://brunch.io/images/logo.png" alt="Brunch")
-      p Bon Appétit.
-      p ...with Bootstrap 4 :)
-      a.btn.btn-primary(href="") Example Button Primary
-      a.btn.btn-dark(href="") Example Button Custom Class
+    nav.navbar.navbar-expand-sm.navbar-light.mb-5
+      .mx-auto.d-sm-flex.d-block.flex-sm-nowr
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse.text-center
+          ul.navbar-nav
+            li.nav-item.active
+              a.nav-link(href="#home")
+                | Home
+                span.sr-only
+            li.nav-item
+              a.nav-link(href="#projects") Projects
+            li.nav-item
+              a.nav-link(href="#articles") Articles
+            li.nav-item
+              a.nav-link(href="#talks") Talks
+            li.nav-item
+              a.nav-link(href="#engagement") Engagement
+    main
+      .container.px-5
+        h1#home Hello, I am Mirjam
+        h3
+          small.text-muted Welcome to my portfolio&nbsp;
+          i.fas.fa-keyboard.text-secondary
+        img.w-25.rounded.float-left.mr-3.mb-3(src="img/profilpic.jpg" alt="Profil picture Mirjam")
+        p I am a highly motivated, self-taught developer. At the age of eleven I started programming on my Schneider CPC 464 in Locomotive BASIC. Programming has been a hobby ever since, mostly web development. In 2017 I started to work as a Frontend Developer at the agency I was working as a Office Manager prior. There I build responsive websites mostly based on Wordpress, using HTML5, CSS3 (SCSS), JavaScript, jQuery and Gulp.
+        p Currently I am working as a Software Engineer - still leaning heavily on the  Frontend side - at cosee in Germay and build modern web applications in ReactJS.
+        p
+          |I&nbsp;
+          strong love&nbsp;
+          | working with dedicated people, write reliable and maintainable code and learn how to become a better programmer – every day. Since I started my career, I cultivated a special love for JavaScript.&nbsp;
+          i.far.fa-heart.text-secondary
+
+      //- contactband
+      section.my-5.bg-secondary
+        .container.px-5.py-3.d-flex.justify-content-around
+            a(class='text-dark' href='https://github.com/programmiri/' title='github profile')
+              i.fab.fa-github.fa-2x
+            a(class='text-dark' href='https://medium.com/@programmiri' title='medium profile')
+                i.fab.fa-medium-m.fa-2x
+            a(class='text-dark' href='https://twitter.com/mirjam_diala' title='twitter profile')
+              i.fab.fa-twitter.fa-2x
+            a(class='text-dark' href='https://www.linkedin.com/in/mirjam-b%C3%A4uerlein/' title='linkedin profile')
+              i.fab.fa-linkedin.fa-2x
+            a(class='text-dark' href='https://www.xing.com/profile/Mirjam_Baeuerlein' title='xing profile')
+              i.fab.fa-xing-square.fa-2x
+            a(class='text-dark' href='https://www.meetup.com/de-DE/members/186762665/' title='meetup profile')
+              i.fab.fa-meetup.fa-2x
+            a(class='text-dark' href='mailto:mirjam.baeuerlein@gmail.com' title='mail address')
+              i.i.fas.fa-envelope.fa-2x
+
+      //- Projects
+      section#projects.container.px-5.mb-5
+        h2.mb-3 Projects
+        .p-3.bg-light
+          ul.list-style-none
+            li.border-bottom.py-3
+              strong
+                a(class='text-dark' href='https://economist-ape-73733.netlify.com/')
+                  | Snek Game
+              | &nbsp;A clone of the old Nokia game snake. Built in plain JavaScript
+            li.border-bottom.py-3
+              strong
+                a(class='text-dark' href='http://undetrainer-barcamp.de')
+                  | hundetrainer-barcamp.de
+              | &nbsp;Site build with Middleman, using Haml. My first project with Bootstrap. Beside creating the website, I  originate this first barcamp for dogtrainers and organized it two years.
+            li.py-3
+              strong
+                a(class='text-dark' href='http://cavecani.de')
+                  | cavecani.de
+              |&nbsp;and&nbsp;
+              strong
+                a(class='text-dark' href='http://caneami.de ')
+                  | caneami.de
+              caneami.de
+              | &nbsp;Both old Wordpress sites (2011), still up and running, though a bit outdated in the look. I built the templates by myself based on HTML5 Boilerplate which was fairly new then. Also built a simple event plugin using custom post types that is still in use.
+
+      //- Articles
+      section#projects.container.px-5.mb-5
+        h2.mb-3 Articles
+        p I am a avid reader and like to read books to educate myself. Resources like Medium, Twitter and various newsletters provide me steady access to new material. Because I profit from all the knowlege other coders share - often for free - I want to contribute too. 
+        h3.h4 Links to my articles
+        ul
+          li.text-secondary
+            a(href='https://medium.com/@programmiri/how-frontend-unit-testing-turned-from-a-fling-to-a-real-thing-for-me-36bf2844d3a0' title='How frontend unit testing turned from a fling to a real thing for me') How frontend unit testing turned from a fling to a real thing for me
+          li.text-secondary
+            a(href='https://medium.com/@programmiri/my-favored-scss-setup-with-bootstrap-4-547e9ea290f8' title='To blog or not to blog') My favored SCSS setup with Bootstrap 4
+          li.text-secondary
+            a(href='https://medium.com/wdstack/setting-up-brunch-with-bootstrap-4-ca052e513e4' title='Setting up Brunch with Bootstrap 4') Setting up Brunch with Bootstrap 4
+          li.text-secondary
+            a(href='https://medium.com/@programmiri/to-blog-or-not-to-blog-85f9a0e92678' title='To blog or not to blog') To blog or not to blog
+            
+
+
