@@ -10,6 +10,7 @@
     "build": "brunch build --production"
   },
   "dependencies": {
+    "pugjs-brunch": "^2.10.2"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2",
