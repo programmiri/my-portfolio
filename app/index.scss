@@ -1,12 +1,8 @@
 // Import Bootstrap config first
 @import './scss/bootstrap/config';
 
-// Import all Bootstrap_ext here
-@import './scss/bootstrap_ext/button';
-
 // Variables and basics
-
-// Components
+@import './scss/basic/link';
 
 // Utilities
 @import './scss/utilities/list';

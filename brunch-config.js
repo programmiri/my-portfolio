@@ -17,6 +17,7 @@ exports.plugins = {
     presets: ['latest']
   },
   sass: {
+    sourceMapEmbed: true,
     options: {
       includePaths: ['./node_modules/bootstrap/scss/'],
       precision: 8

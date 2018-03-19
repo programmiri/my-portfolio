@@ -1,0 +1,9 @@
+.text-link {
+  color: $black;
+  border-bottom: 2px solid $secondary;
+
+  &:hover {
+    background-color: $secondary;
+    transition: background-color 0.4s ease-in-out 0s;
+  }
+}
