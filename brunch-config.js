@@ -22,6 +22,11 @@ exports.plugins = {
       includePaths: ['./node_modules/bootstrap/scss/'],
       precision: 8
     }
+  },
+  postcss: {
+    processors: [
+      require('autoprefixer')(['last 3 versions']),
+    ]
   }
 };
 

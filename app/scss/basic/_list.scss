@@ -1,0 +1,16 @@
+.list-plain-text {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding-left: $spacer;
+    line-height: ($spacer * 2);
+  }
+
+  li::before {
+    content: '★';
+    color: $secondary;
+    margin-right: 0.75em;
+  }
+}

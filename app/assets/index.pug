@@ -1,9 +1,33 @@
 doctype html
+// 
+
+    ,-.       _,---._ __  / \
+   /  )    .-'       `./ /   \
+  (  (   ,'            `/    /|
+   \  `-"             \'\   / |
+    `.              ,  \ \ /  |
+     /`.          ,'-`----Y   |
+    (            ;        |   '
+    |  ,-.    ,-'         |  /
+    |  | (   |      Hi!   | /
+    )  |  \  `.___________|/
+    `--'   `--'
+
+  Nice to see you looking under the hood of my page :)
+  If you want to take an even closer look, feel free to visit the github repo of my portfolio. It's a work in progress project that I update and improve iteratively.
+
 html
   head
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width")
-    title Brunch
+    meta(name='title', content='Mirjam Bäuerlein Portfolio')
+    meta(name='description', content='Hello, I am Mirjam! I am a Software Developer, leaning heavily on the Frontend side and build modern web applications in ReactJS.')
+    meta(name='keywords', content='Frontend Developer, Software Developer, Javascript Developer')
+    meta(name='robots', content='index, follow')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='language', content='English')
+    meta(name='author', content='Mirjam Bäuerlein')
+    title Mirjam Bäuerlein
     link(rel="stylesheet" href="/app.css")
     script(defer="" src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous")
     script(src="/vendor.js")
@@ -11,6 +35,7 @@ html
     script.
       require('index');
   body
+    // just some paragraphs
     nav.navbar.navbar-expand-sm.navbar-light.mb-5
       .mx-auto.d-sm-flex.d-block.flex-sm-nowr
         button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
@@ -29,22 +54,93 @@ html
               a.nav-link(href="#talks") Talks
     main
       .container.px-5
-        h1#home Hello, I am Mirjam
-        h3
-          small.text-muted Welcome to my portfolio&nbsp;
-          i.fas.fa-keyboard.text-secondary
-        img.w-25.rounded.float-left.mr-3.mb-3(src="img/profilpic.jpg" alt="Profil picture Mirjam")
-        p I am a highly motivated, self-taught developer. At the age of eleven I started programming on my Schneider CPC 464 in Locomotive BASIC. Programming has been a hobby ever since, mostly web development. In 2017 I started to work as a Frontend Developer at the agency I was working as a Office Manager prior. There I build responsive websites mostly based on Wordpress, using HTML5, CSS3 (SCSS), JavaScript, jQuery and Gulp.
-        p Currently I am working as a Software Engineer - still leaning heavily on the  Frontend side - at cosee in Germay and build modern web applications in ReactJS.
-        p
-          |I&nbsp;
-          strong love&nbsp;
-          | working with dedicated people, write reliable and maintainable code and learn how to become a better programmer – every day. Since I started my career, I cultivated a special love for JavaScript.&nbsp;
-          i.far.fa-heart.text-secondary
+        h1.display-1#home Hello, I am Mirjam
+        h2.text-muted Welcome to my portfolio&nbsp;
+            i.fas.fa-keyboard.text-secondary
+        p.lead.py-4
+          i.fas.fa-code.mr-2
+          |I am a highly motivated, self-taught developer. Currently I am working as a Software Developer at cosee in Darmstadt leaning heavily on the Frontend side and build modern web applications in ReactJS.
+          i.fas.fa-code.ml-2
+        .clearfix
+          img.w-25.rounded.float-left.mr-4.mb-3(src="img/profilpic.jpg" alt="Profil picture Mirjam")
+          p At the age of eleven I started programming on my Schneider CPC 464 in Locomotive BASIC. Programming has been a hobby ever since, mostly web development. In 2017 I started to work as a Frontend Developer at the agency I was working as a Office Manager prior.
+          p I am a member of the&nbsp;
+            a(href="http://techettes-frankfurt.com/" title="Techettes Frankfurt")
+              | Techettes Frankfurt
+            | ,&nbsp;a local community in the Rhine-Main region that supports women in the technology sector.
+          p
+            |I&nbsp;
+            strong love&nbsp;
+            | working with dedicated people, write reliable and maintainable code and learn how to become a better programmer – every day. Since I started my career, I developed a special love for JavaScript.&nbsp;
+            i.far.fa-heart.text-secondary
+          p What I enjoy most in coding is to strive for perfection: Writing tests and see them pass. Plan, organize and improve the software architecture of my projects. Fixing bugs if that means I can refactore code. Clean up, optimize and then delete some code.
+
+      //- Projects
+      section#projects.container.px-5.my-5
+        h2.mb-3 Some of my projects
+        .p-3.bg-light
+          ul.list-style-none
+            li.border-bottom.py-3
+              a(title="Kerker" href='https://github.com/programmiri/kerker') Kerker
+              br
+              em
+                | Work in progress.&nbsp;
+              | React App to save with&nbsp;
+              a(title="Trezor" href="https://trezor.io/")
+                | trezor
+              | &nbsp;encrypted notes in Dropbox. I'm contributing the Frontend part.
+            li.border-bottom.py-3
+              a(title="Brunch with Bootstrap 4 repo" href='https://github.com/programmiri/brunch-setup-bootstrap4') Brunch with Bootstrap 4 in my favored SCSS setup
+              br
+              | Brunch.io setup with Bootstrap 4 and ES6. It uses a specific setup and structure for my Bootstrap and SCSS in this repo. It's my currently favored setup for small to medium projects.
+            li.border-bottom.py-3
+              a(title="Snek Game" href='https://economist-ape-73733.netlify.com/') Snek Game
+              br
+              |A clone of the old Nokia game snake. Built in plain JavaScript.
+            li.border-bottom.py-3
+              a(title="Hundetrainer Barcamp" href='http://undetrainer-barcamp.de') hundetrainer-barcamp.de
+              br
+              |Site build with Middleman, using Haml. My first project with Bootstrap. Beside creating the website, I  originate this first barcamp for dogtrainers and organized it two years.
+            li.py-3
+              a(title="CaveCani" href='http://cavecani.de') cavecani.de
+              |&nbsp;and&nbsp;
+              a(title="CaneAmi" href='http://caneami.de ') caneami.de
+              br
+              |Both old Wordpress sites (2011), still up and running, though a bit outdated in the look. I built the templates by myself based on HTML5 Boilerplate which was fairly new then. Also built a simple event plugin using custom post types that is still in use.
+
+      //- Articles
+      section#articles.container.px-5.my-5
+        h2.mb-3 Articles
+        p As an avid reader I use - beside lots of books - resources like Medium, Twitter and various newsletters to learn new things and keep up with trends. I profit so much from all the knowlege other coders share - often for free! So I try to contribute too.
+        ul.list-plain-text
+          li
+            a(href='https://medium.com/@programmiri/how-frontend-unit-testing-turned-from-a-fling-to-a-real-thing-for-me-36bf2844d3a0' title='How frontend unit testing turned from a fling to a real thing for me') How frontend unit testing turned from a fling to a real thing for me
+          li
+            a(href='https://medium.com/@programmiri/my-favored-scss-setup-with-bootstrap-4-547e9ea290f8' title='To blog or not to blog') My favored SCSS setup with Bootstrap 4
+          li
+            a(href='https://medium.com/wdstack/setting-up-brunch-with-bootstrap-4-ca052e513e4' title='Setting up Brunch with Bootstrap 4') Setting up Brunch with Bootstrap 4
+          li
+            a(href='https://medium.com/@programmiri/to-blog-or-not-to-blog-85f9a0e92678' title='To blog or not to blog') To blog or not to blog
+      //- Talks
+      section#talks.container.my-5.container.px-5
+        h2.mb-3 Talks
+        p After a few sleepless nights I gave my first first tech talk in March 2018
+          | &nbsp;
+          i.fas.fa-rocket.text-secondary
+          | &nbsp; Not only did I survive, I even had fun.
+        .mt-3
+          .row.m-4.p-4.border
+            .col.mr-2
+              a(href="https://slides.com/programmiri/component-based-css-1/#/")
+                img.img-fluid.rounded(src="img/talk01.jpg" alt="Startscreen slide")
+            .col.ml-2
+              .text-muted March 10, 2018
+              h4.h4 "Component-based CSS"
+              p Developer Camp 2018 in Würzburg
 
       //- contactband
-      section.my-5.bg-secondary
-        .container.px-5.py-3.d-flex.justify-content-around
+      section.mt-5.bg-secondary
+        .container.px-5.py-2.d-flex.justify-content-around.small
             a(class='text-dark' href='https://github.com/programmiri/' title='github profile')
               i.fab.fa-github.fa-2x
             a(class='text-dark' href='https://medium.com/@programmiri' title='medium profile')
@@ -58,43 +154,4 @@ html
             a(class='text-dark' href='https://www.meetup.com/de-DE/members/186762665/' title='meetup profile')
               i.fab.fa-meetup.fa-2x
             a(class='text-dark' href='mailto:mirjam.baeuerlein@gmail.com' title='mail address')
-              i.i.fas.fa-envelope.fa-2x
-
-      //- Projects
-      section#projects.container.px-5.mb-5
-        h2.mb-3 Projects
-        .p-3.bg-light
-          ul.list-style-none
-            li.border-bottom.py-3
-              a(class="text-link" href='https://economist-ape-73733.netlify.com/') Snek Game
-              | &nbsp;A clone of the old Nokia game snake. Built in plain JavaScript
-            li.border-bottom.py-3
-              a(class="text-link" href='http://undetrainer-barcamp.de') hundetrainer-barcamp.de
-              | &nbsp;Site build with Middleman, using Haml. My first project with Bootstrap. Beside creating the website, I  originate this first barcamp for dogtrainers and organized it two years.
-            li.py-3
-              a(class="text-link" href='http://cavecani.de') cavecani.de
-              |&nbsp;and&nbsp;
-              a(class="text-link" href='http://caneami.de ') caneami.de
-              | &nbsp;Both old Wordpress sites (2011), still up and running, though a bit outdated in the look. I built the templates by myself based on HTML5 Boilerplate which was fairly new then. Also built a simple event plugin using custom post types that is still in use.
-
-      //- Articles
-      section#articles.container.px-5.mb-5
-        h2.mb-3 Articles
-        p I am a avid reader and like to read books to educate myself. Resources like Medium, Twitter and various newsletters provide me steady access to new material. Because I profit from all the knowlege other coders share - often for free - I want to contribute too.
-        h3.h4 Links to my articles
-        ul
-          li.text-secondary
-            a(class="text-link" href='https://medium.com/@programmiri/how-frontend-unit-testing-turned-from-a-fling-to-a-real-thing-for-me-36bf2844d3a0' title='How frontend unit testing turned from a fling to a real thing for me') How frontend unit testing turned from a fling to a real thing for me
-          li.text-secondary
-            a(class="text-link" href='https://medium.com/@programmiri/my-favored-scss-setup-with-bootstrap-4-547e9ea290f8' title='To blog or not to blog') My favored SCSS setup with Bootstrap 4
-          li.text-secondary
-            a(class="text-link" href='https://medium.com/wdstack/setting-up-brunch-with-bootstrap-4-ca052e513e4' title='Setting up Brunch with Bootstrap 4') Setting up Brunch with Bootstrap 4
-          li.text-secondary
-            a(class="text-link" href='https://medium.com/@programmiri/to-blog-or-not-to-blog-85f9a0e92678' title='To blog or not to blog') To blog or not to blog
-
-
-      //- Talks
-      section#talks.container.px-5.mb-5
-        h2.mb-3 Talks
-        p Some text
-
+              i.i.far.fa-envelope.fa-2x
