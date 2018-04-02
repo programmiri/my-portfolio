@@ -4,10 +4,8 @@ import 'bootstrap';
 // adds all custom Bootstrap jQuery plugins
 // see all plugins here: http://getbootstrap.com/javascript/
 
+import { addNavigationEventlisteners } from 'js/navigation';
+
 document.addEventListener('DOMContentLoaded', () => {
-  // do your setup here
-  console.log('Initialized app');
-  if ($('btn')) {
-    console.log('jQuery works')
-  }
+  addNavigationEventlisteners();
 });
