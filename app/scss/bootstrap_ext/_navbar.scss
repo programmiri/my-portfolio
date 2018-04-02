@@ -1,0 +1,26 @@
+$main-nav-height-xs: 40px;
+
+.navbar {
+  &.main-navbar {
+    background-color: #fff;
+
+    @include media-breakpoint-only(xs) { 
+      font-size: 0.8rem;
+      padding-top: 0;
+      max-height: $main-nav-height-xs;
+     }
+    .nav-link {
+       @include media-breakpoint-only(xs) { 
+        padding-bottom:0.1em;
+       }
+    }
+  }
+}
+
+
+.anchor-link {
+  display: block;
+  height: $main-nav-height-xs;
+  margin-top: -($main-nav-height-xs);
+  visibility: hidden;
+}

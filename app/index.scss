@@ -1,9 +1,9 @@
 // Import Bootstrap config first
 @import './scss/bootstrap/config';
+@import './scss/bootstrap_ext/navbar';
 
 // Variables and basics
 @import './scss/basic/link';
-@import './scss/basic/list';
 
 // Utilities
 @import './scss/utilities/list';

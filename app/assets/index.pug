@@ -1,5 +1,5 @@
 doctype html
-// 
+//
 
     ,-.       _,---._ __  / \
    /  )    .-'       `./ /   \
@@ -35,17 +35,15 @@ html
     script.
       require('index');
   body
-    // just some paragraphs
-    nav.navbar.navbar-expand-sm.navbar-light.mb-5
-      .mx-auto.d-sm-flex.d-block.flex-sm-nowr
-        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
-          span.navbar-toggler-icon
-        .collapse.navbar-collapse.text-center
+    nav.main-navbar.navbar.navbar-expand.navbar-light.sticky-top
+      .mx-auto
           ul.navbar-nav
             li.nav-item.active
               a.nav-link(href="#home")
-                | Home
-                span.sr-only
+                .d-sm-none
+                  i.fas.fa-home
+                .d-none.d-sm-inline
+                  | Home
             li.nav-item
               a.nav-link(href="#projects") Projects
             li.nav-item
@@ -53,30 +51,41 @@ html
             li.nav-item
               a.nav-link(href="#talks") Talks
     main
-      .container.px-5
-        h1.display-1#home Hello, I am Mirjam
-        h2.text-muted Welcome to my portfolio&nbsp;
-            i.fas.fa-keyboard.text-secondary
+      .anchor-link#home
+      section.container.px-sm-5.mt-5
+        .d-block.d-sm-none
+          h1.display-4 Hello, I am Mirjam
+          h2.h4.text-muted Welcome to my portfolio&nbsp;
+              i.fas.fa-keyboard.text-secondary
+        .d-none.d-sm-block
+          h1.display-1#home Hello, I am Mirjam
+          h2.text-muted Welcome to my portfolio&nbsp;
+              i.fas.fa-keyboard.text-secondary
         p.lead.py-4
           i.fas.fa-code.mr-2
           |I am a highly motivated, self-taught developer. Currently I am working as a Software Developer at cosee in Darmstadt leaning heavily on the Frontend side and build modern web applications in ReactJS.
           i.fas.fa-code.ml-2
         .clearfix
-          img.w-25.rounded.float-left.mr-4.mb-3(src="img/profilpic.jpg" alt="Profil picture Mirjam")
-          p At the age of eleven I started programming on my Schneider CPC 464 in Locomotive BASIC. Programming has been a hobby ever since, mostly web development. In 2017 I started to work as a Frontend Developer at the agency I was working as a Office Manager prior.
-          p I am a member of the&nbsp;
-            a(href="http://techettes-frankfurt.com/" title="Techettes Frankfurt")
-              | Techettes Frankfurt
-            | ,&nbsp;a local community in the Rhine-Main region that supports women in the technology sector.
-          p
-            |I&nbsp;
-            strong love&nbsp;
-            | working with dedicated people, write reliable and maintainable code and learn how to become a better programmer – every day. Since I started my career, I developed a special love for JavaScript.&nbsp;
-            i.far.fa-heart.text-secondary
-          p What I enjoy most in coding is to strive for perfection: Writing tests and see them pass. Plan, organize and improve the software architecture of my projects. Fixing bugs if that means I can refactore code. Clean up, optimize and then delete some code.
+          .d-block.d-sm-none.px-3.pb-4
+            img.img-fluid.rounded(src="img/profilpic.jpg" alt="Profil")
+          .d-none.d-sm-block
+            img.w-50.rounded.float-left.mb-2.mr-3(src="img/profilpic.jpg" alt="Profil picture Mirjam")
+          div
+            p At the age of eleven I started programming on my Schneider CPC 464 in Locomotive BASIC. Programming has been a hobby ever since, mostly web development. In 2017 I started to work as a Frontend Developer at the agency I was working as a Office Manager prior.
+            p I am a member of the&nbsp;
+              a(href="http://techettes-frankfurt.com/" title="Techettes Frankfurt")
+                | Techettes Frankfurt
+              | ,&nbsp;a local community in the Rhine-Main region that supports women in the technology sector.
+            p
+              |I&nbsp;
+              strong love&nbsp;
+              | working with dedicated people, write reliable and maintainable code and learn how to become a better programmer – every day. Since I started my career, I developed a special love for JavaScript.&nbsp;
+              i.far.fa-heart.text-secondary
+            p What I enjoy most in coding is to strive for perfection: Writing tests and see them pass. Plan, organize and improve the software architecture of my projects. Fixing bugs if that means I can refactore code. Clean up, optimize and then delete some code.
 
       //- Projects
-      section#projects.container.px-5.my-5
+      .anchor-link#projects
+      section.container.px-sm-5.my-5
         h2.mb-3 Some of my projects
         .p-3.bg-light
           ul.list-style-none
@@ -109,7 +118,8 @@ html
               |Both old Wordpress sites (2011), still up and running, though a bit outdated in the look. I built the templates by myself based on HTML5 Boilerplate which was fairly new then. Also built a simple event plugin using custom post types that is still in use.
 
       //- Articles
-      section#articles.container.px-5.my-5
+      .anchor-link#articles
+      section.container.px-sm-5.my-5
         h2.mb-3 Articles
         p As an avid reader I use - beside lots of books - resources like Medium, Twitter and various newsletters to learn new things and keep up with trends. I profit so much from all the knowlege other coders share - often for free! So I try to contribute too.
         ul.list-plain-text
@@ -122,7 +132,8 @@ html
           li
             a(href='https://medium.com/@programmiri/to-blog-or-not-to-blog-85f9a0e92678' title='To blog or not to blog') To blog or not to blog
       //- Talks
-      section#talks.container.my-5.container.px-5
+      .anchor-link#talks
+      section.container.my-5.container.px-sm-5
         h2.mb-3 Talks
         p After a few sleepless nights I gave my first first tech talk in March 2018
           | &nbsp;
@@ -140,7 +151,7 @@ html
 
       //- contactband
       section.mt-5.bg-secondary
-        .container.px-5.py-2.d-flex.justify-content-around.small
+        .container.px-sm-5.py-2.d-flex.justify-content-around.small
             a(class='text-dark' href='https://github.com/programmiri/' title='github profile')
               i.fab.fa-github.fa-2x
             a(class='text-dark' href='https://medium.com/@programmiri' title='medium profile')

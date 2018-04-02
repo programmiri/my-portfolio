@@ -3,3 +3,21 @@
   padding: 0;
   margin:0,
 }
+
+
+.list-plain-text {
+  list-style-type: none;
+  padding: 1.5em;
+
+  li {
+    padding-left: $spacer;
+    line-height: ($spacer * 2);
+  }
+
+  li::before {
+    content: '★';
+    color: $secondary;
+    margin-left: -1.3em;
+    margin-right: 0.5em;
+  }
+}
