@@ -1,5 +1,3 @@
-//globals: $, jQuery and Tether, see config
-
 function navActiveStateHandler() {
   $('.nav-link').on('click', function(event) {
     event.preventDefault();

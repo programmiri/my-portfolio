@@ -5,8 +5,6 @@ $main-nav-height-xs: 40px;
     background-color: #fff;
 
     @include media-breakpoint-only(xs) { 
-      font-size: 0.8rem;
-      padding-top: 0;
       max-height: $main-nav-height-xs;
      }
     .nav-link {
