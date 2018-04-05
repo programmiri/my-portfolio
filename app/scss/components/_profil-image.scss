@@ -1,0 +1,9 @@
+.profile-image {
+  @include media-breakpoint-up(xl) {
+    width: 35%;
+  }
+
+  width: 40%;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
