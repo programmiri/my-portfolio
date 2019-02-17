@@ -8,17 +8,17 @@ function navActiveStateHandler() {
 
 function setNewActiveState(element) {
   const allNavItems = $('.nav-item');
-  allNavItems.removeClass('active');
+allNavItems.removeClass('active');
   $(element).parent().addClass('active');
 }
 
-function scrollToTarget(element) {
-  const target = $(element).attr('href');
+function scrollToTarget(element){
+ const target = $(element).attr('href');
   $(document).scrollTop( $(target).offset().top );
 }
 
 function addNavigationEventlisteners() {
-  navActiveStateHandler();
+navActiveStateHandler();
 }
 
 export { addNavigationEventlisteners };
