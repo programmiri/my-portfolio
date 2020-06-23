@@ -33,6 +33,7 @@ html
     link(rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/155/female-technologist_1f469-200d-1f4bb.png")
     link(rel="stylesheet" href="/app.css")
     script(defer="" src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous")
+
     script(src="/vendor.js")
     script(src="/app.js")
     script.
@@ -59,17 +60,13 @@ html
       section.container.px-sm-5.mt-5
         .d-block.d-sm-none
           h1.display-4 Hello, I am Mirjam
-          h2.h4.text-muted Welcome to my portfolio&nbsp;
-              i.fas.fa-keyboard.text-secondary
+          h2.h4.text-muted Welcome to my portfolio ⌨️
         .d-none.d-sm-block
           h1.display-1#home Hello, I am Mirjam
-          h2.text-muted Welcome to my portfolio&nbsp;
-              i.fas.fa-keyboard.text-secondary
+          h2.text-muted Welcome to my portfolio ⌨️
         p.lead.py-4
           i.fas.fa-code.mr-2
-          |I am a highly motivated Software Developer, leaning  heavily on the Frontend side and in love with all-things JavaScript
-          | &nbsp;
-          i.fas.fa-heart.text-secondary 
+          |I am a highly motivated Software Developer, leaning  heavily on the Frontend side and in love with all-things JavaScript 💛.
           | &nbsp;
           |Currently I'm working at #[a(href="https://bryter.io/" title="Bryter") BRYTER] - sometimes from home, sometimes from the road, sometimes in the Frankfurt office - and help building a no code decision automation platform with  
           span.text-nowrap VueJS.
@@ -85,59 +82,50 @@ html
             p
               |I&nbsp;
               strong love&nbsp;
-              | working with dedicated people, write reliable and maintainable code and learn how to become a better programmer – every day. Since I started my career, I developed a special love for JavaScript.&nbsp;
-              i.far.fa-heart.text-secondary
+              | working with dedicated people, write reliable and maintainable code and learn how to become a better programmer – every day. Since I started my career, I developed a special love for JavaScript. 💛
             p What I enjoy most in coding is to strive for perfection: Writing tests and see them pass. Plan, organize and improve the software architecture of my projects. Fixing bugs if that means I can refactore code. Clean up, optimize and then delete some code.
 
       //- Projects
       .anchor-link#projects
       section.container.px-sm-5.my-5
-        h2.mb-3 My projects
-        p In my free time I like to work on some side projects, often related to programming and the developer community in general.
+        h2.mb-3 Some of my projects
+        p In my free time I like to work on some side projects, often related to programming and the developer community in general. Here are a few of them:
         .p-3.bg-light
           ul.list-style-none
             li.border-bottom.py-3
+              | 📻 &nbsp; 
+              a(title="expect(Exception) Podcast" href='https://expect-exception.fail/') expect(Exception) Podcast
+              br
+              | Co-host at expect(Exception), a podcast about Frontend Testing. We discuss every single detail of that opinionated topics. Unit, Integration E2E, Snapshot, Visual Regression, Tools and Frameworks... 
+            li.border-bottom.py-3
+              | 👩‍🏫 &nbsp; 
               a(title="Mediencampus Dieburg" href='https://mediencampus.h-da.de/') Guest lectures at the University of Applied Sciences in Darmstadt
               br
-              | Since 2018 I'm giving guest lectures at the University of Applied Sciences in Darmstadt on the Faculty of Media, teaching students about the basics of web development: HTML and CSS.
+              | Since 2018 I'm giving guest lectures at the University of Applied Sciences in Darmstadt on the Faculty of Media, teaching students about the basics of web development - HTML and CSS - and give an introduction to software testing. 
             li.border-bottom.py-3
+              | 🧑‍🤝‍🧑 &nbsp; 
               a(title="Conference Buddy" href='http://conferencebuddy.io/') Conference Buddy
               br
-              em
-                | Work in progress.&nbsp;
-              | Conference Buddy provides a platform to find companions for tech conferences. It's for everyone who wants to attend a tech conference but doens't feel comfortable going alone.
+              | Conference Buddy provides a platform to find companions for tech conferences. It's for everyone who wants to attend a tech conference but does not feel comfortable going alone.
             li.border-bottom.py-3
-              a(title="Kerker" href='https://github.com/programmiri/kerker') Kerker
-              br
-              em
-                | Work in progress.&nbsp;
-              | React App to save with&nbsp;
-              a(title="Trezor" href="https://trezor.io/")
-                | trezor
-              | &nbsp;encrypted notes in Dropbox. I'm contributing the Frontend part.
-            li.border-bottom.py-3
-              a(title="Brunch with Bootstrap 4 repo" href='https://github.com/programmiri/brunch-setup-bootstrap4') Brunch with Bootstrap 4 in my favored SCSS setup
-              br
-              | Brunch.io setup with Bootstrap 4 and ES6. It uses a specific setup and structure for my Bootstrap and SCSS in this repo. It's my currently favored setup for small to medium projects.
-            li.border-bottom.py-3
+              | 🐍 &nbsp; 
               a(title="Snek Game" href='https://economist-ape-73733.netlify.com/') Snek Game
               br
               |A clone of the old Nokia game snake. Built in plain JavaScript.
-            li.border-bottom.py-3
-              a(title="Hundetrainer Barcamp" href='http://hundetrainer-barcamp.de') hundetrainer-barcamp.de
-              br
-              |Site build with Middleman, using Haml. My first project with Bootstrap. Beside building the website, I created this first barcamp for dogtrainers and organized it two years.
             li.py-3
+              | 🐕 &nbsp; 
               a(title="CaveCani" href='http://cavecani.de') cavecani.de
               |&nbsp;and&nbsp;
               a(title="CaneAmi" href='http://caneami.de ') caneami.de
               br
-              |Both old Wordpress sites (2011), still up and running, though a bit outdated in the look. I built the templates by myself based on HTML5 Boilerplate which was fairly new then. Also built a simple event plugin using custom post types that is still in use.
+              |Both old Wordpress sites (2011), still up and running, though really outdated in the look. I built the templates by myself based on HTML5 Boilerplate which was fairly new then. Also built a simple event plugin using custom post types that is still in use.
 
+
+      
       //- Articles
       .anchor-link#articles
       section.container.px-sm-5.my-5
-        h2.mb-3 My articles
+        h2.mb-3 A few articles I wrote
         p As an avid reader I use - beside lots of books - resources like Medium, Twitter and various newsletters to learn new things and keep up with trends. I profit so much from all the knowlege other coders share - often for free! So I try to contribute too.
         ul.list-plain-text
           li
@@ -152,7 +140,7 @@ html
       //- Talks
       .anchor-link#talks
       section.container.my-5.container.px-sm-5
-        h2.mb-3 My talks
+        h2.mb-3 Talks I gave
         p
           |I'm open to speak at more events, so, feel free to contact me about that.
           i.fas.fa-rocket.text-secondary
@@ -160,10 +148,23 @@ html
           .mt-3
           .row.border.pt-3.mx-2.mx-md-5
             .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
+              a(href="https://stareast.techwell.com/program/concurrent-sessions/treat-yourself-tale-dog-training-and-test-driven-development-stareast-virtual-2020" title="Programm - Treat yourself") 
+                img.img-fluid.rounded(src="img/talk13.jpg" alt="Startscreen slide")
+            .col-md.pt-md-3
+              .text-muted May 7, 2020
+              h4.h4 "Treat yourself - a tale about dog training and test driven development"
+              p Talk at STAREAST Virtual+ Testing Conference
+              p Recording of the talk can be seen with a 
+                a(href="https://stareast.techwell.com/pricing-packages" title="Link to register for free pass") sign in for the free-pass
+              p
+                a(href="https://github.com/programmiri/examples-talk-tdd-dogtraining" title="Code Examples") github repo with code example
+          .mt-3
+          .row.border.pt-3.mx-2.mx-md-5
+            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
               a(href="https://speakerdeck.com/programmiri/treat-yourself-a-tale-about-dogtraining-and-test-driven-development" title="Slides - Treat yourself") 
                 img.img-fluid.rounded(src="img/talk13.jpg" alt="Startscreen slide")
             .col-md.pt-md-3
-              .text-muted Feb 6, 2019
+              .text-muted Feb 6, 2020
               h4.h4 "Treat yourself - a tale about dog training and test driven development"
               p Keynote at European Testing Conference
               p
@@ -337,6 +338,7 @@ html
               img.img-fluid.rounded(src="img/mirjam-talk01.jpg" alt="Profil picture Mirjam")
               .text-center.pt-2
                 em Impression of my Techettes talk.
+
       //- contactband
       section.mt-5.bg-secondary
         .container.px-sm-5.py-2.d-flex.justify-content-around.small
