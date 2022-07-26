@@ -9,21 +9,22 @@
     "start": "brunch watch --server",
     "build": "brunch build --production"
   },
-  "dependencies": {
-  },
   "devDependencies": {
-    "auto-reload-brunch": "^2",
-    "babel-brunch": "~6.0",
+    "auto-reload-brunch": "^3",
+    "autoprefixer": "^10.4.7",
+    "babel-brunch": "^6.0",
     "babel-preset-latest": "^6",
     "bootstrap": "^4.0.0",
-    "brunch": "^2",
-    "clean-css-brunch": "^2",
+    "brunch": "^4.0.1",
+    "clean-css-brunch": "^3.0.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.1",
+    "postcss-brunch": "^3.0",
     "pugjs-brunch": "^2.10.2",
-    "sass-brunch": "^2.10.4",
-    "uglify-js-brunch": "^2",
-    "postcss-brunch": "^2.0",
-    "autoprefixer": "^6.3"
+    "sass-brunch": "^3.0.1",
+    "uglify-js-brunch": "^2"
+  }, 
+  "resolutions": {
+     "postcss": "^8.4.13"
   }
 }

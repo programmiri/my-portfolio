@@ -28,7 +28,7 @@ exports.plugins = {
       require('autoprefixer')(['last 3 versions']),
     ]
   },
-  pug: { pugRuntime: require('path').resolve('.', 'vendor', 'pug_runtime.js') }
+  pug: { pugRuntime: false }
 };
 
 exports.npm = {
