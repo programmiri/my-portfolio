@@ -16,19 +16,19 @@ doctype html
   Nice to see you looking under the hood of my page :)
   If you want to take an even closer look, feel free to visit the github repo of my portfolio:
   https://github.com/programmiri/my-portfolio
-  It's a work in progress project that I update and improve iteratively.
+  
 
 html
   head
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width")
-    meta(name='title', content='Mirjam Aulbach (Bäuerlein) Portfolio')
-    meta(name='description', content='Hello, I am Mirjam! I am a Software Developer, leaning heavily on the Frontend side and build modern web applications in VueJS.')
-    meta(name='keywords', content='Frontend Developer, Software Developer, Javascript Developer')
+    meta(name='title', content='Mirjam Aulbach Portfolio')
+    meta(name='description', content='Hello, I am Mirjam! I am a Software Engineer, leaning heavily on the Frontend side and build modern web applications in VueJS.')
+    meta(name='keywords', content='Frontend Engineer, Software Engineer, Javascript Developer')
     meta(name='robots', content='index, follow')
     meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
     meta(name='language', content='English')
-    meta(name='author', content='Mirjam Aulbach (Bäuerlein)')
+    meta(name='author', content='Mirjam Aulbach')
     title Mirjam Aulbach
     link(rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/155/female-technologist_1f469-200d-1f4bb.png")
     link(rel="stylesheet" href="/app.css")
@@ -66,24 +66,19 @@ html
           h2.text-muted Welcome to my portfolio ⌨️
         p.lead.py-4
           i.fas.fa-code.mr-2
-          |I am a highly motivated Software Developer, leaning  heavily on the Frontend side and in love with all-things JavaScript 💛.
-          | &nbsp;
-          |Currently I'm working at #[a(href="https://bryter.io/" title="Bryter") BRYTER] - sometimes from home, sometimes from the road, sometimes in the Frankfurt office - and help building a no code decision automation platform with  
-          span.text-nowrap VueJS.
-            i.fas.fa-code.ml-2
+          |I am a highly motivated Software Engineer, leaning  heavily on the Frontend side and in love with all-things JavaScript 💛 and testing!
+          i.fas.fa-code.ml-2
         .clearfix
           .d-block.d-md-none.px-3.pb-4
             img.img-fluid.rounded(src="img/profilpic-bw.jpg" alt="Profil picture Mirjam")
           .d-none.d-md-block
-            img.profile-image.rounded.float-left(src="img/profilpic-bw.jpg" alt="Profil picture Mirjam")
+            img.profile-image.rounded.float-left(src="img/mirjam-conf.jpg" alt="Profil picture Mirjam")
           div
-            p At the age of eleven I started programming on my Schneider CPC 464 in Locomotive BASIC. Programming has been a hobby ever since, mostly web development. In 2017 I started to work as a Frontend Developer at the agency I was working as a Office Manager prior. Also, I worked as a dogtrainer for almost nine years, focusing mostly on training for dogs with behavior issues.
-            p I am a member of the #[a(href="http://techettes-frankfurt.com/" title="Techettes Frankfurt") Techettes Frankfurt], a local community in the Rhine-Main region that supports women in the technology sector. Also I am co-organizer of the #[a(href="https://www.vuejsfrankfurt.de/") Vue.js Frankfurt] meetup.
-            p
-              |I&nbsp;
-              strong love&nbsp;
-              | working with dedicated people, write reliable and maintainable code and learn how to become a better programmer – every day. Since I started my career, I developed a special love for JavaScript. 💛
-            p What I enjoy most in coding is to strive for perfection: Writing tests and see them pass. Plan, organize and improve the software architecture of my projects. Fixing bugs if that means I can refactore code. Clean up, optimize and then delete some code.
+            p.lead Currently I'm working at #[a(href="https://bryter.io/" title="Bryter") BRYTER] - sometimes from home, sometimes from the road, sometimes in the Frankfurt office - and help building a no code decision automation platform with VueJS on Enterprise Level.
+            
+            p.lead I’m working over 5 years in development and bring substantial experience and learning from all the areas I worked in more than 20 years. 
+            p.lead I enjoy working with and caring about dedicated people. I write reliable, maintainable, well-tested and readable code and semantic, accessible HTML. 
+            p.lead What I enjoy most in coding is delivering sustainability: Writing tests and seeing them pass; planning, organizing and improving the software architecture of my project; cleaning up, refactoring, testing and eventually deleting code. 
 
       //- Projects
       .anchor-link#projects
@@ -92,6 +87,12 @@ html
         p In my free time I like to work on some side projects, often related to programming and the developer community in general. Here are a few of them:
         .p-3.bg-light
           ul.list-style-none
+            li.border-bottom.py-3
+              | 🐶 &nbsp; 
+              a(title="Conference Buddy" href='http://conferencebuddy.io/') Conference Buddy
+              br
+              | Conference Buddy aims to make tech conferences accessible for people who want to attend, but who are not comfortable going alone.
+
             li.border-bottom.py-3
               | 📻 &nbsp; 
               a(title="expect(Exception) Podcast" href='https://expect-exception.fail/') expect(Exception) Podcast
@@ -102,248 +103,109 @@ html
               a(title="Mediencampus Dieburg" href='https://mediencampus.h-da.de/') Guest lectures at the University of Applied Sciences in Darmstadt
               br
               | Since 2018 I'm giving guest lectures at the University of Applied Sciences in Darmstadt on the Faculty of Media, teaching students about the basics of web development - HTML and CSS - and give an introduction to software testing. 
+            
             li.border-bottom.py-3
-              | 🧑‍🤝‍🧑 &nbsp; 
-              a(title="Conference Buddy" href='http://conferencebuddy.io/') Conference Buddy
+              | 💻 &nbsp; 
+              a(title="Free webinar" href='https://www.crowdcast.io/e/testing-your-functions/') Free webinar: Testing your Gatsby Serverless Functions with Queen Raae
               br
-              | Conference Buddy provides a platform to find companions for tech conferences. It's for everyone who wants to attend a tech conference but does not feel comfortable going alone.
+              |Free Webinar on how to get started TDDing your Gatsby Functions. 
             li.border-bottom.py-3
-              | 🐍 &nbsp; 
-              a(title="Snek Game" href='https://economist-ape-73733.netlify.com/') Snek Game
+              | 📽 &nbsp; 
+              a(title="Video stream series" href='https://www.youtube.com/watch?v=ZTIoA298mX4&list=PL9W-8hhRoLoNpEj71YsWChzOAocHiGZB4') Video stream series with Queen Raae - start building Conference Buddy 2.0 
               br
-              |A clone of the old Nokia game snake. Built in plain JavaScript.
-            li.py-3
-              | 🐕 &nbsp; 
-              a(title="CaveCani" href='http://cavecani.de') cavecani.de
-              |&nbsp;and&nbsp;
-              a(title="CaneAmi" href='http://caneami.de ') caneami.de
-              br
-              |Both old Wordpress sites (2011), still up and running, though really outdated in the look. I built the templates by myself based on HTML5 Boilerplate which was fairly new then. Also built a simple event plugin using custom post types that is still in use.
+              |Benedicte invited me to her weekly streaming format "Unauthorized and rum-fueled treasure hunts in the sharky waters around the Gatsby islands" and helped me get Conference Buddy 2.0 off the ground 🎉
 
 
       
       //- Articles
       .anchor-link#articles
       section.container.px-sm-5.my-5
-        h2.mb-3 A few articles I wrote
-        p As an avid reader I use - beside lots of books - resources like Medium, Twitter and various newsletters to learn new things and keep up with trends. I profit so much from all the knowlege other coders share - often for free! So I try to contribute too.
+        h2.mb-3 My Articles
         ul.list-plain-text
           li
-            a(href='https://medium.com/@programmiri/how-frontend-unit-testing-turned-from-a-fling-to-a-real-thing-for-me-36bf2844d3a0' title='How frontend unit testing turned from a fling to a real thing for me') How frontend unit testing turned from a fling to a real thing for me
+            a(href='https://devm.io/careers/women-in-tech-mirjam-bauerlein-172737' title='Women in Tech: “The diversity debate mustn’t end in the near future”') Interview with Women in Tech: “The diversity debate mustn’t end in the near future”
           li
-            a(href='https://medium.com/@programmiri/my-favored-scss-setup-with-bootstrap-4-547e9ea290f8' title='To blog or not to blog') My favored SCSS setup with Bootstrap 4
+            a(href='https://dev.to/programmiri/do-we-need-safe-spaces-for-minoritised-people-in-tech-2d2g' title='Do we need safe spaces for minoritised people in tech? ') Do we need safe spaces for minoritised people in tech? 
           li
-            a(href='https://medium.com/wdstack/setting-up-brunch-with-bootstrap-4-ca052e513e4' title='Setting up Brunch with Bootstrap 4') Setting up Brunch with Bootstrap 4
+            a(href='https://dev.to/programmiri/how-frontend-unit-testing-turned-from-a-fling-to-a-real-thing-for-me-6bk' title='How frontend unit testing turned from a fling to a real thing for me') How frontend unit testing turned from a fling to a real thing for me
           li
-            a(href='https://medium.com/@programmiri/to-blog-or-not-to-blog-85f9a0e92678' title='To blog or not to blog') To blog or not to blog
+            a(href='https://dev.to/programmiri/my-favored-scss-setup-with-bootstrap-4-590j' title='My favored SCSS setup with Bootstrap 4') My favored SCSS setup with Bootstrap 4
+          
+          
 
       //- Talks
       .anchor-link#talks
       section.container.my-5.container.px-sm-5
-        h2.mb-3 Talks I gave
+        h2.mb-3 Conference speaking
         p
-          |I'm open to speak at more events, so, feel free to contact me about that.
+          |I've given talks and keynotes on various conferences since 2018 and been invited to community eventes and meetups to speak. I'm open to speak at more events, so, feel free to contact me about that.
           i.fas.fa-rocket.text-secondary
+        img.img-fluid.rounded(src="img/mirjam-webmontag.jpg" alt="Profil picture Mirjam")
+        
+        h3.my-5 My conference talk
           | &nbsp; 
           .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
-            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-              a(href="https://stareast.techwell.com/program/concurrent-sessions/treat-yourself-tale-dog-training-and-test-driven-development-stareast-virtual-2020" title="Programm - Treat yourself") 
-                img.img-fluid.rounded(src="img/talk13.jpg" alt="Startscreen slide")
-            .col-md.pt-md-3
-              .text-muted May 7, 2020
-              h4.h4 "Treat yourself - a tale about dog training and test driven development"
-              p Talk at STAREAST Virtual+ Testing Conference
-              p Recording of the talk can be seen with a 
-                a(href="https://stareast.techwell.com/pricing-packages" title="Link to register for free pass") sign in for the free-pass
-              p
-                a(href="https://github.com/programmiri/examples-talk-tdd-dogtraining" title="Code Examples") github repo with code example
-          .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
-            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-              a(href="https://speakerdeck.com/programmiri/treat-yourself-a-tale-about-dogtraining-and-test-driven-development" title="Slides - Treat yourself") 
-                img.img-fluid.rounded(src="img/talk13.jpg" alt="Startscreen slide")
-            .col-md.pt-md-3
-              .text-muted Feb 6, 2020
-              h4.h4 "Treat yourself - a tale about dog training and test driven development"
-              p Keynote at European Testing Conference
-              p
-                a(href="https://speakerdeck.com/programmiri/treat-yourself-a-tale-about-dogtraining-and-test-driven-development" title="Slides - Full Skill Developer") Slides of the talk
-              p
-                a(href="https://github.com/programmiri/examples-talk-tdd-dogtraining" title="Code Examples") github repo with code example
-          .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
-            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-              a(href="https://speakerdeck.com/programmiri/full-skill-developer-95817e7f-8060-4f7e-82b9-3d867ae3bf52" title="Slides - Full Skill Developer") 
-                img.img-fluid.rounded(src="img/talk12.jpg" alt="Startscreen slide")
-            .col-md.pt-md-3
-              .text-muted Oct 12, 2019
-              h4.h4 "Full Skill Developer"
-              p Keynote at unkonf 2019
-              p
-                a(href="https://speakerdeck.com/programmiri/full-skill-developer-95817e7f-8060-4f7e-82b9-3d867ae3bf52" title="Slides - Full Skill Developer") Slides of the talk
-          .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
-            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-              a(href="https://speakerdeck.com/programmiri/treat-yourself-a-tale-about-dog-training-and-test-driven-develompent" title="Slides - Treat yourself")
-                img.img-fluid.rounded(src="img/talk11.jpg" alt="Startscreen slide")
-            .col-md.pt-md-3
-              .text-muted Oct 5, 2019
-              h4.h4 "Treat yourself - a tale about dog training and test driven development"
-              p Talk at RuhrJS
-              p
-                a(href="https://speakerdeck.com/programmiri/treat-yourself-a-tale-about-dog-training-and-test-driven-develompent" title="Slides - Treat yourself") Slides of the talk
-              p
-                a(href="https://www.youtube.com/watch?v=V7QRcnnMoKI" title="Video recording of the talk at RuhrJS") Video recording of the talk
-              p
-                a(href="https://github.com/programmiri/examples-talk-tdd-dogtraining" title="Code Examples") github repo with code example
-          .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
-            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-              a(href="https://speakerdeck.com/programmiri/besser-spat-als-nie-testsuite-in-bestehenden-react-apps-nachziehen-2023bf11-f7c4-4dd0-a669-d0563e66dff7" title="Slides Besser spät als nie - cosee TechTalks")
-                img.img-fluid.rounded(src="img/talk10.jpg" alt="Startscreen slide")
-            .col-md.pt-md-3
-              .text-muted July 25, 2019
-              h4.h4 "Better late then never - how to implement a testsuite in an existing ReactJS App" (german)
-              p Talk at cosee TechTalks meetup
-              p
-                a(href="https://vimeo.com/350916074") Video recording of the talk (german)
-          .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
-            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-              a(href="https://speakerdeck.com/programmiri/besser-spat-als-nie-testsuite-in-bestehenden-react-apps-nachziehen" title="Slides Besser spät als nie - cosee TechTalks")
-                img.img-fluid.rounded(src="img/talk09.jpg" alt="Startscreen slide")
-            .col-md.pt-md-3
-              .text-muted June 27, 2019
-              h4.h4 "Better late then never - how to implement a testsuite in an existing ReactJS App" (german)
-              p Talk at EnterJS 2019
-              p
-                a(href="https://speakerdeck.com/programmiri/besser-spat-als-nie-testsuite-in-bestehenden-react-apps-nachziehen" title="Slides Besser spät als nie") Slides of the talk (german)
-          .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
-            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-              a(href="https://speakerdeck.com/programmiri/full-skill-developer" title="Slides Full Skill Developer")
-                img.img-fluid.rounded(src="img/talk08.jpg" alt="Startscreen slide")
-            .col-md.pt-md-3
-              .text-muted April 30, 2019
-              h4.h4 "Full Skill Developer" (german)
-              p Talk at ITCS Darmstadt 2019
-              p
-                a(href="https://speakerdeck.com/programmiri/full-skill-developer" title="Slides Full Skill Developer") Slides of the talk
-          .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
-            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-              a(href="https://speakerdeck.com/programmiri/organise-your-styles-with-component-based-css-approach" title="Slides Component-based CSS")
-                img.img-fluid.rounded(src="img/talk05.jpg" alt="Startscreen slide")
-            .col-md.pt-md-3
-              .text-muted April 27, 2019
-              h4.h4 "Organise your styles with component-based CSS approach" (english)
-              p Talk at FrontConf Munich 2019
-              p
-                a(href="https://speakerdeck.com/programmiri/organise-your-styles-with-component-based-css-approac" title="Slides Organise your styles with component-based CSS approach") Slides of the talk
-          .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
-            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-              a(href="https://speakerdeck.com/programmiri/organise-your-styles-with-component-based-css-approach" title="Slides Component-based CSS")
-                img.img-fluid.rounded(src="img/talk07.jpg" alt="Startscreen slide")
-            .col-md.pt-md-3
-              .text-muted April 26, 2019
-              h4.h4 "My way into tech and the role of women in computer science" (german)
-              p Talk at the "Easter Camp" of Technical University in Darmstadt, a 4-day event aimed at girls betweeen 10 and 13 years that shows inside in different tech-related careers through guest and workshops.
-              p
-                a(href="https://speakerdeck.com/programmiri/mein-weg-in-tech" title="Slides Mein Weg in Tech") Slides of the talk (german)
-          .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
-            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-              a(href="https://www.youtube.com/watch?v=psyqSSw530c" title="Video DACHfest talk")
-                img.img-fluid.rounded(src="img/talk03.jpg" alt="Startscreen slide")
-            .col-md.pt-md-3
-              .text-muted March 21, 2019
-              h4.h4 "Everybody needs somebody" (english)
-              p Talk at Usergroup BerlinJS
-              p
-                 a(href="https://speakerdeck.com/programmiri/everybody-needs-somebody" title="Slides Everybody needs somebody") Slides of the talk
-          .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
-            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-              img.img-fluid.rounded(src="img/talk06.jpg" alt="Startscreen video")
-            .col-md.pt-md-3
-              .text-muted March 11, 2019
-              h4.h4 "Conference Buddy"
-              p Talk at Webmontag Frankfurt
-              p
-                a(href="https://www.youtube.com/watch?v=jgLjXcMKeuk") Video recording of the talk (german)
-          .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
-            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-              a(href="https://www.youtube.com/watch?v=psyqSSw530chttps://speakerdeck.com/programmiri/my-approach-to-a-component-based-css-f601400d-28ff-4b74-b3e2-5009b768d236" title="Slides Component-based CSS ct webdev")
-                img.img-fluid.rounded(src="img/talk05.jpg" alt="Startscreen slide")
-            .col-md.pt-md-3
-              .text-muted February 7, 2019
-              h4.h4 "Component-based CSS"
-              p Talk at c't &lt;webdev&gt in Cologne
-              p
-                a(href="https://speakerdeck.com/programmiri/my-approach-to-a-component-based-css-f601400d-28ff-4b74-b3e2-5009b768d236" title="Slides presentation") Slides for this talk
-              p
-                a(href="https://github.com/programmiri/component-based-functional-css-examples" title="github repo with examples") github repository with examples and links for further reading
-          .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
-            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-              a(href="https://speakerdeck.com/programmiri/unit-testing-im-frontend-lightning-talk"  title="Slides Unit Testing im Frontend")
-                img.img-fluid.rounded(src="img/talk04.jpg" alt="Startscreen slide")
-            .col-md.pt-md-3
-              .text-muted November 29, 2018
-              h4.h4 "Lightning Talks - Unit Testing in Frontend." (german)
-              p Lightning Talk at Cosee TechTalks
-              p
-                a(href="https://speakerdeck.com/programmiri/unit-testing-im-frontend-lightning-talk" title="Slides Unit Testing im Frontend") Slides for this talk
-              p
-                a(href="https://vimeo.com/304337030" title="Video  Unit Testing im Frontend") Video recording of the talk (german)
-          .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
-            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-              a(href="https://www.youtube.com/watch?v=psyqSSw530c" title="Video DACHfest talk")
-                img.img-fluid.rounded(src="img/talk03.jpg" alt="Startscreen slide")
-            .col-md.pt-md-3
-              .text-muted November 10, 2018
-              h4.h4 "Everybody needs somebody" (english)
-              p Lightning Talk at DACHfest in Munich
-              p
-                a(href="https://www.youtube.com/watch?v=psyqSSw530c" title="Video DACHfest talk") Video recording of the talk (english)
+        .row.pt-3.mx-2.mx-md-5.border.rounded.mb-5.border-secondary
+          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
+            img.img-fluid.rounded(src="img/talk13.jpg" alt="Treat yourself - a tale about dog training and test driven development")
+          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4   
+            ul
+              li MODXpo, 8 July 2022
+              li WeAreDevloper World Congress, 15 June 2022
+              li FemTech Conference, 25.06. 2020
+              li EnterJS 2019, September 30, 2019
+              li STAREAST Virtual+ Testing Conference, May 7, 2020
+              li Keynote at European Testing Conference, Feb 6, 2020
+              li RuhrJS, July 25, 2019
+        .row.pt-3.mx-2.mx-md-5.border.rounded.mb-5.border-secondary
+          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
+            img.img-fluid.border.rounded(src="img/talk09.jpg" alt="Better late then never - how to retrofit a testsuite")
+          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4   
+            ul
+              li ctwebdev, 7 April 2021
+              li JS World Conference, 23 February 2021
+              li International JavaScript Conference Munich, 29 October 2020
+              li EnterJS 2019, April 30, 2019
+              li ITCS Darmstadt, April 27, 2019
+
+        .row.pt-3.mx-2.mx-md-5.border.rounded.mb-5.border-secondary 
+          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
+            img.img-fluid.border.rounded(src="img/talk05.jpg" alt="Organise your styles with component-based CSS approach")
+          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
+            ul
+              li FrontConf Munich, April 26, 2019
+              li c't <webdev> in Cologne, November 29, 2018
+              li Developer Camp 2018 in Würzburg, March 10, 2018
+        .row.pt-3.mx-2.mx-md-5.border.rounded.mb-5.border-secondary 
+          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
+            img.img-fluid.border.rounded(src="img/talk03.jpg" alt="Everybody needs somebody")
+          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
+            ul
+              li Webmontag Frankfurt, February 7, 2019
+              li DACHfest in Munich, May 8, 2018
+        .row.pt-3.mx-2.mx-md-5.border.rounded.mb-5.border-secondary 
+          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
+            img.img-fluid.border.rounded(src="img/talk12.jpg" alt="Full Skill Developer")
+          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
+            ul
+              li Keynote at unkonf, Oct 5, 2019
         .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
-            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-              a(href="https://slides.com/programmiri/my-component-based-css-approach#/" title="Slides presentation")
-                img.img-fluid.rounded(src="img/talk02.jpg" alt="Startscreen slide")
-            .col-md.pt-md-3
-              .text-muted May 8, 2018
-              h4.h4 "My approach to a component-based CSS"
-              p Meetup Techettes Frankfurt
-              p
-                a(href="https://slides.com/programmiri/my-component-based-css-approach#/" title="Slides presentation") Slides for this talk
-        .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
-            .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-              a(href="https://slides.com/programmiri/component-based-css-1/#/" title="Slides presentation")
-                img.img-fluid.rounded(src="img/talk01.jpg" alt="Startscreen slide")
-            .col-md.pt-md-3
-              .text-muted March 10, 2018
-              h4.h4 "Component-based CSS"
-              p Developer Camp 2018 in Würzburg
-              p
-                a(href="https://slides.com/programmiri/component-based-css-1/#/" title="Slides presentation") Slides for this talk
-        .mt-3
-          .row.border.pt-3.mx-2.mx-md-5
+          .row.pt-3.mx-2.mx-md-5
             .col-md.pb-3.pt-md-3.px-md-4
-              img.img-fluid.rounded(src="img/mirjam-talk01.jpg" alt="Profil picture Mirjam")
-              .text-center.pt-2
-                em Impression of my Techettes talk.
+              img.img-fluid.rounded(src="img/talking01.jpg" alt="TODO")
+            .col-md.pb-3.pt-md-3.px-md-4
+              img.img-fluid.rounded(src="img/talking03.jpg" alt="TODO")
+          .row.pt-3.mx-2.mx-md-5
+            .col-md.pb-3.pt-md-3.px-md-4
+              img.img-fluid.rounded(src="img/talking02.jpg" alt="TODO")
+            .col-md.pb-3.pt-md-3.px-md-4
+              img.img-fluid.rounded(src="img/talking04.jpg" alt="TODO")
 
       //- contactband
       section.mt-5.bg-secondary
 
         .container.px-sm-5.pb-2.pt-3.d-flex.justify-content-around.small.align-items-center
-            strong.d-sm-block.d-none.lead 👩‍💻 Mirjam Aulbach (Bäuerlein)
+            strong.d-sm-block.d-none.lead 👩‍💻 Mirjam Aulbach
             a(class='text-dark' href='https://github.com/programmiri/' title='github profile')
               i.fab.fa-github.fa-2x
             a(class='text-dark' href='https://medium.com/@programmiri' title='medium profile')
@@ -357,4 +219,4 @@ html
             a(class='text-dark' href='mailto:me@programmiri.rocks' title='mail address')
               i.i.far.fa-envelope.fa-2x
         .d-flex.justify-content-around.pb-2
-          small.d-block.d-sm-none 👩‍💻 Mirjam Aulbach (Bäuerlein)
+          small.d-block.d-sm-none 👩‍💻 Mirjam Aulbach
