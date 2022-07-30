@@ -26,6 +26,9 @@ exports.plugins = {
   postcss: {
     processors: [
       require('autoprefixer')(['last 3 versions']),
+      require('csswring')({
+    removeAllComments: true
+  })
     ]
   },
   pug: { pugRuntime: false }

@@ -16,15 +16,15 @@
     "babel-preset-latest": "^6",
     "bootstrap": "^4.0.0",
     "brunch": "^4.0.1",
-    "clean-css-brunch": "^3.0.0",
+    "csswring": "^7.0.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.1",
     "postcss-brunch": "^3.0",
     "pugjs-brunch": "^2.10.2",
     "sass-brunch": "^3.0.1",
     "uglify-js-brunch": "^2"
-  }, 
+  },
   "resolutions": {
-     "postcss": "^8.4.13"
+    "postcss": "^8.4.13"
   }
 }
