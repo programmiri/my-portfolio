@@ -31,7 +31,15 @@ exports.plugins = {
   })
     ]
   },
-  pug: { pugRuntime: false }
+  pug: { pugRuntime: false },
+  terser: {
+    mangle: false,
+    compress: {
+      global_defs: {
+        DEBUG: false,
+      },
+    },
+  },
 };
 
 exports.npm = {

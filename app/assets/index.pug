@@ -32,12 +32,8 @@ html
     title Mirjam Aulbach
     link(rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/155/female-technologist_1f469-200d-1f4bb.png")
     link(rel="stylesheet" href="/app.css")
-    script(src="https://kit.fontawesome.com/3a16846133.js" crossorigin="anonymous")
+    script(async src="https://kit.fontawesome.com/3a16846133.js" crossorigin="anonymous")
 
-    script(src="/vendor.js")
-    script(src="/app.js")
-    script.
-      require('index');
   body
     nav.main-navbar.navbar.navbar-expand.navbar-light.sticky-top
       .mx-auto
@@ -49,9 +45,13 @@ html
                 .d-none.d-sm-inline
                   | Home
             li.nav-item
-              a.nav-link(href="#projects") Community projects
+              a.nav-link(href="#projects") 
+                .d-block.d-sm-none Projects
+                .d-none.d-sm-block Community projects
             li.nav-item
-              a.nav-link(href="#talks") Conference speaking
+              a.nav-link(href="#talks") 
+                .d-block.d-sm-none Speaking
+                .d-none.d-sm-block Conference speaking
             li.nav-item
               a.nav-link(href="#articles") Articles
             
@@ -71,9 +71,15 @@ html
           i.fas.fa-code.ml-2
         .clearfix
           .d-block.d-md-none.px-3.pb-4
-            img.img-fluid.rounded(src="img/profilpic-bw.jpg" alt="Profil picture Mirjam")
+            picture
+              source(type="image/webp" srcset="img/mirjam-conf.webp")
+              source(type="image/jpeg" srcset="img/mirjam-conf.jpg")
+              img.img-fluid.rounded(src="images/mirjam-conf.webp" width="500" height="750")
           .d-none.d-md-block
-            img.profile-image.rounded.float-left(src="img/mirjam-conf.jpg" alt="Profil picture Mirjam")
+            picture
+              source(type="image/webp" srcset="img/mirjam-conf.webp")
+              source(type="image/jpeg" srcset="img/mirjam-conf.jpg")
+              img.img-fluid.profile-image.float-left.rounded(src="images/mirjam-conf.webp" width="500" height="750")
           div
             p.lead Currently I'm working at #[a(href="https://bryter.io/" title="Bryter") BRYTER] - sometimes from home, sometimes from the road, sometimes in the Frankfurt office - and helping build a no code decision automation platform with VueJS on Enterprise Level.
             
@@ -133,14 +139,20 @@ html
         p
           |I've given talks and keynotes on various conferences since 2018 and been invited to community eventes and meetups to speak. I'm open to speak at more events, so, feel free to contact me about that.
           i.fas.fa-rocket.text-secondary
-        img.img-fluid.rounded(src="img/mirjam-webmontag.jpg" alt="Profil picture Mirjam")
+        picture
+          source(type="image/webp" srcset="img/mirjam-webmontag.webp")
+          source(type="image/jpeg" srcset="img/mirjam-webmontag.jpg")
+          img.img-fluid.rounded(src="images/mirjam-webmontag.webp" alt="TODO" width="1024" height="684")
         
         h3.my-5 My conference talk
           | &nbsp; 
           .mt-3
         .row.pt-3.mx-2.mx-md-5.border.rounded.mb-5.border-secondary
           .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-            img.img-fluid.rounded(src="img/talk13.jpg" alt="Treat yourself - a tale about dog training and test driven development")
+            picture
+              source(type="image/webp" srcset="img/talk-treat-yourself.webp")
+              source(type="image/jpeg" srcset="img/talk-treat-yourself.jpg")
+              img.img-fluid.rounded(src="images/talk-treat-yourself.webp" alt="Treat yourself - a tale about dog training and test driven development" width="500" height="279")
           .col-md.pb-3.pb-md-5.pt-md-3.px-md-4   
             ul
               li MODXpo, 8 July 2022
@@ -152,7 +164,10 @@ html
               li RuhrJS, July 25, 2019
         .row.pt-3.mx-2.mx-md-5.border.rounded.mb-5.border-secondary
           .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-            img.img-fluid.border.rounded(src="img/talk09.jpg" alt="Better late then never - how to retrofit a testsuite")
+            picture
+              source(type="image/webp" srcset="img/talk-better-late-than-never.webp")
+              source(type="image/jpeg" srcset="img/talk-better-late-than-never.jpg")
+              img.img-fluid.rounded(src="images/talk-better-late-than-never.webp" alt="Better late then never - how to retrofit a testsuite" width="500" height="276")
           .col-md.pb-3.pb-md-5.pt-md-3.px-md-4   
             ul
               li ctwebdev, 7 April 2021
@@ -163,7 +178,10 @@ html
 
         .row.pt-3.mx-2.mx-md-5.border.rounded.mb-5.border-secondary 
           .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-            img.img-fluid.border.rounded(src="img/talk05.jpg" alt="Organise your styles with component-based CSS approach")
+            picture
+              source(type="image/webp" srcset="img/talk-component-based-css.webp")
+              source(type="image/jpeg" srcset="img/talk-component-based-css.jpg")
+              img.img-fluid.rounded(src="images/talk-component-based-css.webp" alt="Organise your styles with component-based CSS approach" width="500" height="279")
           .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
             ul
               li FrontConf Munich, April 26, 2019
@@ -171,28 +189,46 @@ html
               li Developer Camp 2018 in Würzburg, March 10, 2018
         .row.pt-3.mx-2.mx-md-5.border.rounded.mb-5.border-secondary 
           .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-            img.img-fluid.border.rounded(src="img/talk03.jpg" alt="Everybody needs somebody")
+            picture
+              source(type="image/webp" srcset="img/talk-everybody-needs-somebody.webp")
+              source(type="image/jpeg" srcset="img/talk-everybody-needs-somebody.jpg")
+              img.img-fluid.rounded(src="images/talk-everybody-needs-somebody.webp" alt="Everybody needs somebody" width="500" height="282")
           .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
             ul
               li Webmontag Frankfurt, February 7, 2019
               li DACHfest in Munich, May 8, 2018
         .row.pt-3.mx-2.mx-md-5.border.rounded.mb-5.border-secondary 
           .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-            img.img-fluid.border.rounded(src="img/talk12.jpg" alt="Full Skill Developer")
+              picture
+                source(type="image/webp" srcset="img/talk-full-skill-developer.webp")
+                source(type="image/jpeg" srcset="img/talk-full-skill-developer.jpg")
+                img.img-fluid.rounded(src="images/talk-full-skill-developer.webp" alt="Full Skill Developer" width="500" height="277")
           .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
             ul
               li Keynote at unkonf, Oct 5, 2019
         .mt-3
           .row.pt-3.mx-2.mx-md-5
             .col-md.pb-3.pt-md-3.px-md-4
-              img.img-fluid.rounded(src="img/talking01.jpg" alt="TODO")
+              picture
+                source(type="image/webp" srcset="img/talking01.webp")
+                source(type="image/jpeg" srcset="img/talking01.jpg")
+                img.img-fluid.rounded(src="images/talking01.webp" alt="TODO" width="500" height="396")
             .col-md.pb-3.pt-md-3.px-md-4
-              img.img-fluid.rounded(src="img/talking03.jpg" alt="TODO")
+              picture
+                source(type="image/webp" srcset="img/talking03.webp")
+                source(type="image/jpeg" srcset="img/talking03.jpg")
+                img.img-fluid.rounded(src="images/talking03.webp" alt="TODO" width="600" height="300")
           .row.pt-3.mx-2.mx-md-5
             .col-md.pb-3.pt-md-3.px-md-4
-              img.img-fluid.rounded(src="img/talking02.jpg" alt="TODO")
+              picture
+                source(type="image/webp" srcset="img/talking02.webp")
+                source(type="image/jpeg" srcset="img/talking02.jpg")
+                img.img-fluid.rounded(src="images/talking02.webp" alt="TODO" width="600" height="450")
             .col-md.pb-3.pt-md-3.px-md-4
-              img.img-fluid.rounded(src="img/talking04.jpg" alt="TODO")
+              picture
+                source(type="image/webp" srcset="img/talking04.webp")
+                source(type="image/jpeg" srcset="img/talking04.jpg")
+                img.img-fluid.rounded(src="images/talking04.webp" alt="TODO" width="600" height="450")
 
       //- Articles
       .anchor-link#articles
