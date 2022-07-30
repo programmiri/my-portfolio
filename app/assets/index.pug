@@ -18,7 +18,7 @@ doctype html
   https://github.com/programmiri/my-portfolio
   
 
-html
+html(lang="en")
   head
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width")
@@ -39,19 +39,15 @@ html
       .mx-auto
           ul.navbar-nav
             li.nav-item.active
-              a.nav-link(href="#home")
-                .d-sm-none
+              a.nav-link(href="#home" title="Home")
+                span.d-sm-none
                   i.fas.fa-home
-                .d-none.d-sm-inline
+                span.d-none.d-sm-inline
                   | Home
             li.nav-item
-              a.nav-link(href="#projects") 
-                .d-block.d-sm-none Projects
-                .d-none.d-sm-block Community projects
+              a.nav-link(href="#projects") Projects
             li.nav-item
-              a.nav-link(href="#talks") 
-                .d-block.d-sm-none Speaking
-                .d-none.d-sm-block Conference speaking
+              a.nav-link(href="#speaking") Speaking
             li.nav-item
               a.nav-link(href="#articles") Articles
             
@@ -74,12 +70,12 @@ html
             picture
               source(type="image/webp" srcset="img/mirjam-conf.webp")
               source(type="image/jpeg" srcset="img/mirjam-conf.jpg")
-              img.img-fluid.rounded(src="images/mirjam-conf.webp" width="500" height="750")
+              img.img-fluid.rounded(src="images/mirjam-conf.webp" width="500" height="750" alt="Me, gesturing with my hands and speaking. You see a blurred window in the background. It is clear that this is a conference setting.")
           .d-none.d-md-block
-            picture
+            picture(aria-hidden="true")
               source(type="image/webp" srcset="img/mirjam-conf.webp")
               source(type="image/jpeg" srcset="img/mirjam-conf.jpg")
-              img.img-fluid.profile-image.float-left.rounded(src="images/mirjam-conf.webp" width="500" height="750")
+              img.img-fluid.profile-image.float-left.rounded(src="images/mirjam-conf.webp" width="500" height="750" alt="Me, gesturing with my hands and speaking. You see a blurred window in the background. It is clear that this is a conference setting.")
           div
             p.lead Currently I'm working at #[a(href="https://bryter.io/" title="Bryter") BRYTER] - sometimes from home, sometimes from the road, sometimes in the Frankfurt office - and helping build a no code decision automation platform with VueJS on Enterprise Level.
             
@@ -122,18 +118,18 @@ html
             
             li.border-bottom.py-3
               strong
-                | 💻 &nbsp;Free webinar: #[a(title="Free webinar" href='https://www.crowdcast.io/e/testing-your-functions/') Testing your Gatsby Serverless Functions] with Queen Raae
+                | 💻 &nbsp;Free webinar: #[a(href='https://www.crowdcast.io/e/testing-your-functions/') Testing your Gatsby Serverless Functions] with Queen Raae
               br
               |Free Webinar on how to get started TDDing your Gatsby Functions. 
             li.border-bottom.py-3
               strong
-                | 📽 &nbsp;Video stream series with Queen Raae: #[a(title="Video stream series" href='https://www.youtube.com/watch?v=ZTIoA298mX4&list=PL9W-8hhRoLoNpEj71YsWChzOAocHiGZB4') Start Conference Buddy 2.0]
+                | 📽 &nbsp;Video stream series with Queen Raae: #[a( href='https://www.youtube.com/watch?v=ZTIoA298mX4&list=PL9W-8hhRoLoNpEj71YsWChzOAocHiGZB4') Start Conference Buddy 2.0]
               br
               |Benedicte invited me to her weekly streaming format "Unauthorized and rum-fueled treasure hunts in the sharky waters around the Gatsby islands" and helped me get Conference Buddy 2.0 off the ground 🎉
               
 
-      //- Talks
-      .anchor-link#talks
+      //- speaking
+      .anchor-link#speaking
       section.container.my-5.container.px-sm-5
         h2.mb-3 Conference speaking
         p
@@ -142,7 +138,7 @@ html
         picture
           source(type="image/webp" srcset="img/mirjam-webmontag.webp")
           source(type="image/jpeg" srcset="img/mirjam-webmontag.jpg")
-          img.img-fluid.rounded(src="images/mirjam-webmontag.webp" alt="TODO" width="1024" height="684")
+          img.img-fluid.rounded(src="images/mirjam-webmontag.webp" width="1024" height="684" alt="Me standing on a stage with a laptop a few feets from me. Gesturing with my hands, with really cute mint nailpolish. In the background you see a cut of projection of a slide, the words 'needs someoby' are readable.")
         
         h3.my-5 My conference talk
           | &nbsp; 
@@ -152,7 +148,7 @@ html
             picture
               source(type="image/webp" srcset="img/talk-treat-yourself.webp")
               source(type="image/jpeg" srcset="img/talk-treat-yourself.jpg")
-              img.img-fluid.rounded(src="images/talk-treat-yourself.webp" alt="Treat yourself - a tale about dog training and test driven development" width="500" height="279")
+              img.img-fluid.rounded(src="images/talk-treat-yourself.webp" alt="Slide: Treat yourself - a tale about dog training and test driven development" width="500" height="279")
           .col-md.pb-3.pb-md-5.pt-md-3.px-md-4   
             ul
               li MODXpo, 8 July 2022
@@ -167,7 +163,7 @@ html
             picture
               source(type="image/webp" srcset="img/talk-better-late-than-never.webp")
               source(type="image/jpeg" srcset="img/talk-better-late-than-never.jpg")
-              img.img-fluid.rounded(src="images/talk-better-late-than-never.webp" alt="Better late then never - how to retrofit a testsuite" width="500" height="276")
+              img.img-fluid.rounded(src="images/talk-better-late-than-never.webp" alt="Slide: Better late then never - how to retrofit a testsuite" width="500" height="276")
           .col-md.pb-3.pb-md-5.pt-md-3.px-md-4   
             ul
               li ctwebdev, 7 April 2021
@@ -181,7 +177,7 @@ html
             picture
               source(type="image/webp" srcset="img/talk-component-based-css.webp")
               source(type="image/jpeg" srcset="img/talk-component-based-css.jpg")
-              img.img-fluid.rounded(src="images/talk-component-based-css.webp" alt="Organise your styles with component-based CSS approach" width="500" height="279")
+              img.img-fluid.rounded(src="images/talk-component-based-css.webp" alt="Slide: Organise your styles with component-based CSS approach" width="500" height="279")
           .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
             ul
               li FrontConf Munich, April 26, 2019
@@ -192,7 +188,7 @@ html
             picture
               source(type="image/webp" srcset="img/talk-everybody-needs-somebody.webp")
               source(type="image/jpeg" srcset="img/talk-everybody-needs-somebody.jpg")
-              img.img-fluid.rounded(src="images/talk-everybody-needs-somebody.webp" alt="Everybody needs somebody" width="500" height="282")
+              img.img-fluid.rounded(src="images/talk-everybody-needs-somebody.webp" alt="Slide: Everybody needs somebody" width="500" height="282")
           .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
             ul
               li Webmontag Frankfurt, February 7, 2019
@@ -202,7 +198,7 @@ html
               picture
                 source(type="image/webp" srcset="img/talk-full-skill-developer.webp")
                 source(type="image/jpeg" srcset="img/talk-full-skill-developer.jpg")
-                img.img-fluid.rounded(src="images/talk-full-skill-developer.webp" alt="Full Skill Developer" width="500" height="277")
+                img.img-fluid.rounded(src="images/talk-full-skill-developer.webp" alt="Slide: Full Skill Developer" width="500" height="277")
           .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
             ul
               li Keynote at unkonf, Oct 5, 2019
@@ -212,23 +208,23 @@ html
               picture
                 source(type="image/webp" srcset="img/talking01.webp")
                 source(type="image/jpeg" srcset="img/talking01.jpg")
-                img.img-fluid.rounded(src="images/talking01.webp" alt="TODO" width="500" height="396")
+                img.img-fluid.rounded(src="images/talking01.webp"  width="500" height="396" alt="Me sitting on a stage with the MC of the MODXpo conference in a pannel setting. Answering a question while, of course, gesturing with my hand a lot.")
             .col-md.pb-3.pt-md-3.px-md-4
               picture
                 source(type="image/webp" srcset="img/talking03.webp")
                 source(type="image/jpeg" srcset="img/talking03.jpg")
-                img.img-fluid.rounded(src="images/talking03.webp" alt="TODO" width="600" height="300")
+                img.img-fluid.rounded(src="images/talking03.webp"  width="600" height="300" alt="Shot from the back of a conference room. Over the heads of a lot of people you can see me on a stage, speaking. In the background there is a cut of projection of a slide, a picture of a cat getting some blush applied with a brush.")
           .row.pt-3.mx-2.mx-md-5
             .col-md.pb-3.pt-md-3.px-md-4
               picture
                 source(type="image/webp" srcset="img/talking02.webp")
                 source(type="image/jpeg" srcset="img/talking02.jpg")
-                img.img-fluid.rounded(src="images/talking02.webp" alt="TODO" width="600" height="450")
+                img.img-fluid.rounded(src="images/talking02.webp"  width="600" height="450" alt="Me on a stage, a latop with a lot of stickers in front of me. In the background ou can see a projection of a slide with a big HI and an emoji of a womans face half behind her laptop.")
             .col-md.pb-3.pt-md-3.px-md-4
               picture
                 source(type="image/webp" srcset="img/talking04.webp")
                 source(type="image/jpeg" srcset="img/talking04.jpg")
-                img.img-fluid.rounded(src="images/talking04.webp" alt="TODO" width="600" height="450")
+                img.img-fluid.rounded(src="images/talking04.webp"  width="600" height="450" alt="Me standing on the stage of We Are Developers World Congress. In the background a big screen with a the talk title.")
 
       //- Articles
       .anchor-link#articles
