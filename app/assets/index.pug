@@ -35,36 +35,32 @@ html(lang="en")
     script(async src="https://kit.fontawesome.com/3a16846133.js" crossorigin="anonymous")
 
   body
-    nav.main-navbar.navbar.navbar-expand.navbar-light.sticky-top
+    nav.lead.main-navbar.navbar.navbar-expand.navbar-light.sticky-top
       .mx-auto
           ul.navbar-nav
             li.nav-item.active
-              a.nav-link(href="#home" title="Home")
+              a.nav-link(href="#home" title="Home" class="px-md-4 px-2")
                 span.d-sm-none
                   i.fas.fa-home
                 span.d-none.d-sm-inline
                   | Home
             li.nav-item
-              a.nav-link(href="#projects") Projects
+              a.nav-link(href="#projects" class="px-md-4 px-2") Projects
             li.nav-item
-              a.nav-link(href="#speaking") Speaking
+              a.nav-link(href="#speaking" class="px-md-4 px-2") Speaking
             li.nav-item
-              a.nav-link(href="#articles") Articles
+              a.nav-link(href="#articles" class="px-md-4 px-2") Articles 
             
 
     main
       .anchor-link#home
       section.container.px-sm-5.mt-5
         .d-block.d-sm-none
-          h1.display-4 Hello, I am Mirjam
-          h2.h4.text-muted Welcome to my portfolio ⌨️
-        .d-none.d-sm-block
-          h1.display-1#home Hello, I am Mirjam
-          h2.text-muted Welcome to my portfolio ⌨️
-        p.lead.py-4
-          i.fas.fa-code.mr-2
+          h1.display-3 Hello, I am Mirjam 👩‍💻
+        .d-none.d-sm-block(aria-hidden="true")
+          h1.display-1#home Hello, I am Mirjam 👩‍💻
+        h2.pt-4.pb-5
           |I am a highly motivated Software Engineer, leaning  heavily on the Frontend side and in love with all-things JavaScript 💛 and testing!
-          i.fas.fa-code.ml-2
         .clearfix
           .d-block.d-md-none.px-3.pb-4
             picture
@@ -140,75 +136,82 @@ html(lang="en")
           source(type="image/jpeg" srcset="img/mirjam-webmontag.jpg")
           img.img-fluid.rounded(src="images/mirjam-webmontag.webp" width="1024" height="684" alt="Me standing on a stage with a laptop a few feets from me. Gesturing with my hands, with really cute mint nailpolish. In the background you see a cut of projection of a slide, the words 'needs someoby' are readable.")
         
-        h3.my-5 My conference talk
+        h3.my-5 My conference talks
           | &nbsp; 
           .mt-3
-        .row.pt-3.mx-2.mx-md-5.border.rounded.mb-5.border-secondary
-          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-            picture
-              source(type="image/webp" srcset="img/talk-treat-yourself.webp")
-              source(type="image/jpeg" srcset="img/talk-treat-yourself.jpg")
-              img.img-fluid.rounded(src="images/talk-treat-yourself.webp" alt="Slide: Treat yourself - a tale about dog training and test driven development" width="500" height="279")
-          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4   
-            ul
-              li MODXpo, 8 July 2022
-              li WeAreDevloper World Congress, 15 June 2022
-              li FemTech Conference, 25.06. 2020
-              li EnterJS 2019, September 30, 2019
-              li STAREAST Virtual+ Testing Conference, May 7, 2020
-              li Keynote at European Testing Conference, Feb 6, 2020
-              li RuhrJS, July 25, 2019
-        .row.pt-3.mx-2.mx-md-5.border.rounded.mb-5.border-secondary
-          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-            picture
-              source(type="image/webp" srcset="img/talk-better-late-than-never.webp")
-              source(type="image/jpeg" srcset="img/talk-better-late-than-never.jpg")
-              img.img-fluid.rounded(src="images/talk-better-late-than-never.webp" alt="Slide: Better late then never - how to retrofit a testsuite" width="500" height="276")
-          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4   
-            ul
-              li ctwebdev, 7 April 2021
-              li JS World Conference, 23 February 2021
-              li International JavaScript Conference Munich, 29 October 2020
-              li EnterJS 2019, April 30, 2019
-              li ITCS Darmstadt, April 27, 2019
+        .bg-light.rounded
+          .row.mx-4.border-bottom.py-4
+            .col-md-5
+              picture
+                source(type="image/webp" srcset="img/talk-treat-yourself.webp")
+                source(type="image/jpeg" srcset="img/talk-treat-yourself.jpg")
+                img.img-fluid.rounded.border(src="images/talk-treat-yourself.webp" alt="Slide: Treat yourself - a tale about dog training and test driven development" width="500" height="279")
+            .col-md.pt-4.p-md-0
+              ul
+                li MODXpo, Jul 2022
+                li WeAreDevloper World Congress, Jun 2022
+                li EnterJS 2020, Sep 2020
+                li FemTech Conference, Jun 2020
+                li STAREAST Virtual+ Testing Conference, May 2020
+                li Keynote at European Testing Conference, Feb 2020
+                li RuhrJS, Jul 2019
+          
+          .row.mx-4.border-bottom.py-4
+            .col-md-5
+              picture
+                source(type="image/webp" srcset="img/talk-better-late-than-never.webp")
+                source(type="image/jpeg" srcset="img/talk-better-late-than-never.jpg")
+                img.img-fluid.rounded.border(src="images/talk-better-late-than-never.webp" alt="Slide: Better late then never - how to retrofit a testsuite" width="500" height="276")
+            .col-md.pt-4.p-md-0
+              ul
+                li ctwebdev, Apr 2021
+                li JS World Conference, Feb 2021
+                li International JavaScript Conference Munich, Oct 2020
+                li EnterJS 2019, Apr 2019
+                li ITCS Darmstadt, Apr 2019
 
-        .row.pt-3.mx-2.mx-md-5.border.rounded.mb-5.border-secondary 
-          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-            picture
-              source(type="image/webp" srcset="img/talk-component-based-css.webp")
-              source(type="image/jpeg" srcset="img/talk-component-based-css.jpg")
-              img.img-fluid.rounded(src="images/talk-component-based-css.webp" alt="Slide: Organise your styles with component-based CSS approach" width="500" height="279")
-          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-            ul
-              li FrontConf Munich, April 26, 2019
-              li c't <webdev> in Cologne, November 29, 2018
-              li Developer Camp 2018 in Würzburg, March 10, 2018
-        .row.pt-3.mx-2.mx-md-5.border.rounded.mb-5.border-secondary 
-          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-            picture
-              source(type="image/webp" srcset="img/talk-everybody-needs-somebody.webp")
-              source(type="image/jpeg" srcset="img/talk-everybody-needs-somebody.jpg")
-              img.img-fluid.rounded(src="images/talk-everybody-needs-somebody.webp" alt="Slide: Everybody needs somebody" width="500" height="282")
-          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-            ul
-              li Webmontag Frankfurt, February 7, 2019
-              li DACHfest in Munich, May 8, 2018
-        .row.pt-3.mx-2.mx-md-5.border.rounded.mb-5.border-secondary 
-          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
+          
+          .row.mx-4.border-bottom.py-4
+            .col-md-5
+              picture
+                source(type="image/webp" srcset="img/talk-component-based-css.webp")
+                source(type="image/jpeg" srcset="img/talk-component-based-css.jpg")
+                img.img-fluid.rounded.border(src="images/talk-component-based-css.webp" alt="Slide: Organise your styles with component-based CSS approach" width="500" height="279")
+            .col-md.pt-4.p-md-0
+              ul
+                li FrontConf Munich, Apr 2019
+                li c't <webdev> in Cologne, Nov 2018
+                li Developer Camp 2018 in Würzburg, Mar 2018
+          
+          .row.mx-4.border-bottom.py-4
+            .col-md-5
+              picture
+                source(type="image/webp" srcset="img/talk-everybody-needs-somebody.webp")
+                source(type="image/jpeg" srcset="img/talk-everybody-needs-somebody.jpg")
+                img.img-fluid.rounded.border(src="images/talk-everybody-needs-somebody.webp" alt="Slide: Everybody needs somebody" width="500" height="282")
+            .col-md.pt-4.p-md-0
+              ul
+                li Webmontag Frankfurt, Feb 2019
+                li DACHfest in Munich, May 2018
+          
+          .row.mx-4.py-4
+            .col-md-5
               picture
                 source(type="image/webp" srcset="img/talk-full-skill-developer.webp")
                 source(type="image/jpeg" srcset="img/talk-full-skill-developer.jpg")
-                img.img-fluid.rounded(src="images/talk-full-skill-developer.webp" alt="Slide: Full Skill Developer" width="500" height="277")
-          .col-md.pb-3.pb-md-5.pt-md-3.px-md-4
-            ul
-              li Keynote at unkonf, Oct 5, 2019
+                img.img-fluid.rounded.border(src="images/talk-full-skill-developer.webp" alt="Slide: Full Skill Developer" width="500" height="277")
+            .col-md.pt-4.p-md-0
+              ul
+                li Keynote at unkonf, Oct 5, 2019
+
+        //- conference pics
         .mt-3
           .row.pt-3.mx-2.mx-md-5
             .col-md.pb-3.pt-md-3.px-md-4
               picture
                 source(type="image/webp" srcset="img/talking01.webp")
                 source(type="image/jpeg" srcset="img/talking01.jpg")
-                img.img-fluid.rounded(src="images/talking01.webp"  width="500" height="396" alt="Me sitting on a stage with the MC of the MODXpo conference in a pannel setting. Answering a question while, of course, gesturing with my hand a lot.")
+                img.img-fluid.rounded.border(src="images/talking01.webp"  width="500" height="396" alt="Me sitting on a stage with the MC of the MODXpo conference in a pannel setting. Answering a question while, of course, gesturing with my hand a lot.")
             .col-md.pb-3.pt-md-3.px-md-4
               picture
                 source(type="image/webp" srcset="img/talking03.webp")
